@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const BancosDetails = ({opcionDetailBanco}) => (
   <div>
     <div >
@@ -12,4 +13,4 @@ const BancosDetails = ({opcionDetailBanco}) => (
   </div>
 )
 
-export default BancosDetails;
+export default BancosDetails
