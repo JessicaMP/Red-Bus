@@ -29,7 +29,6 @@
   border: 2px solid #feb;
 }
 
-
 .border-right {
   border-top-right-radius: .80rem!important;
   border-bottom-right-radius: .80rem!important;
@@ -43,4 +42,8 @@
 .instrucciones {
   color:  #fc0;
   font-size: 20px;
+}
+
+.cursor {
+  cursor: pointer;
 }
