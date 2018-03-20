@@ -15,7 +15,7 @@ const TimeBox = () => (
             </div>
         </div>
         <div className="col-xl-4 d-flex justify-content-center align-items-center p-3 color-time-box border-right">
-            <img className="mr-3 alarm-img " src="assets/images/alarm.png" alt="Generic placeholder image" />
+            <img className="mr-3 alarm-img " src="alarm.png" alt="Generic placeholder image" />
             <div className="media-body col-xl-7">
                 <p className="text-center mb-0">Tu orden expirará</p>
                 <h6 className="text-center">23 Feb - 01:12 p.m.</h6>

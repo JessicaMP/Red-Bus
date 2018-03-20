@@ -13,7 +13,7 @@ const Footer = () => (
             <div className="col-xl-4">
                 <figure className=" d-flex justify-content-center align-items-center">
                     <p className="d-inline-block">Pago vía</p>
-                    <img className="pagoEfectivo-img" src="assets/images/pagoefectivo.png" alt="Logo Pago Efectivo" />
+                    <img className="pagoEfectivo-img" src="pagoefectivo.png" alt="Logo Pago Efectivo" />
                 </figure>
             </div>
         </div>
