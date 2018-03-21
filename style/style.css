@@ -39,6 +39,10 @@
   border-bottom-left-radius: .80rem!important;
 }
 
+.border-link {
+  border-radius: .80rem!important;
+}
+
 .instrucciones {
   color:  #fc0;
   font-size: 20px;

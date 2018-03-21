@@ -7,7 +7,6 @@ const SelectPayEfectivo = () => (
     <div className="m-4">
         <p className="text-secondary">Selecciona dónde quieres pagar</p>
         <SitePayEfectivo dataPagosEfectivo={dataEfectivo}/>
-       
     </div>
 );
 
