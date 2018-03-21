@@ -4,7 +4,10 @@ import { selectBank } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 function mapStateToProps(state) {
-  return { bancos: state.banks }
+  return { 
+    bancos: state.banks,
+    bancoSelect: state.active_bank.name
+  }
 }
 
 function mapDispatchToProps(dispatch) {

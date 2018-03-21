@@ -1,11 +1,13 @@
 import React from 'react';
 import SitePayItemBancos from './SitePay-itemBancos';
 
-const SitePayBancos = ({bancos, onBancoClick }) => {
+const SitePayBancos = ({bancos, onBancoClick, bancoSelect }) => {
     return (
     <div className="row d-flex justify-content-between align-items-center mt-4 mb-4">
+        {console.log(bancoSelect)}
         {bancos.map( banco =>
             <SitePayItemBancos
+                bancoSelect={bancoSelect}
                 key={banco.name}
                 onClick = {() => onBancoClick(banco)}
                 {...banco}
@@ -13,6 +15,6 @@ const SitePayBancos = ({bancos, onBancoClick }) => {
         )}
      </div>
     )
-} 
+};
 
 export default SitePayBancos;
