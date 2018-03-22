@@ -1,4 +1,4 @@
-export function selectBank(bank) {
+export const selectBank = bank => {
 
   return {
     type: 'BANK_SELECTED',

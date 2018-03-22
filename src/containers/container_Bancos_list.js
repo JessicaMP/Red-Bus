@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SitePayBancos from '../components/SitePayBancos';
-import { selectBank } from '../actions/index';
+import { selectBank } from '../actions';
 import { bindActionCreators } from 'redux';
 
 function mapStateToProps(state) {

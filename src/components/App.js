@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Main from './main';
+import Main from './Main';
 import Footer from './Footer';
 
 const App = () => (
@@ -12,5 +12,3 @@ const App = () => (
 )
 
 export default App;
-
-
