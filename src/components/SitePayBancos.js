@@ -3,7 +3,7 @@ import SitePayItemBancos from './SitePay-itemBancos';
 
 const SitePayBancos = ({bancos, onBancoClick, bancoSelect }) => {
     return (
-    <div className="row d-flex justify-content-between align-items-center mt-4 mb-4">
+    <div className="row d-flex justify-content-between mt-4 mb-4">
         {console.log(bancoSelect)}
         {bancos.map( banco =>
             <SitePayItemBancos

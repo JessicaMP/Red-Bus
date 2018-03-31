@@ -1,6 +1,10 @@
 import React from 'react';
+import moment from 'moment';
 
-const TimeBox = () => (
+const time = new Date();
+time.setHours(time.getHours() + 12);
+
+const TimeBox = date => (
     <div className="row m-4 ">
         <div className="col-xl-3 col-4 d-flex flex-column align-items-center p-3 bg-warning border-left">
             <p className="text-light mb-0">Código de pago</p>
@@ -18,7 +22,7 @@ const TimeBox = () => (
             <img className="mr-3 alarm-img" src="assets/images/icon_time.svg" alt="Generic placeholder image" />
             <div className="media-body col-xl-7">
                 <p className="text-center mb-0">Tu orden expirará</p>
-                <h6 className="text-center">23 Feb - 01:12 p.m.</h6>
+                <h6 className="text-center">{moment(time).format('lll')}</h6>
             </div>
         </div>
     </div>
