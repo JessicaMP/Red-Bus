@@ -1,14 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SitePayItemEfectivo = ({ datoPagos }) => (
-    <div className="p-md-3 p-2">
-        <img className="img-fluid" src={datoPagos} />
-    </div>
+const style = {border: '2px solid yellow'};
+
+const SitePayItemEfectivo = ({ name, img, onClick,figcaption }) => (
+    
+    <figure className="col-xl-2 col-md-4 m-0" onClick={onClick}>
+        <img className="p-2 cursor bank" src={img} alt={name}/>
+        <figcaption>{figcaption}</figcaption>
+    </figure>
 )
-
-SitePayItemEfectivo.propTypes = {
-    datoPagos: PropTypes.string.isRequired
-};
 
 export default SitePayItemEfectivo;

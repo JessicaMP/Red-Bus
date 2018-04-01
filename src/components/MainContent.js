@@ -3,6 +3,7 @@ import TimeBox from './TimeBox';
 import SelectPayBanca from './SelectPayBanca';
 import SelectPayEfectivo from './SelectPayEfectivo';
 import BancosDetails from '../containers/container_Banco_details';
+import EfectivoDetails from '../containers/container_efectivo_details';
 
 const MainContent = () => (
     <div className="tab-content" id="nav-tabContent">
@@ -12,7 +13,9 @@ const MainContent = () => (
             <BancosDetails /> 
         </div>
         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <SelectPayEfectivo />
+            <SelectPayBanca />
+            <BancosDetails />
+            
         </div>
     </div>
 );
