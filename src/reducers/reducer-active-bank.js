@@ -2,7 +2,11 @@ export default function (state = {name: 'bcp',  id : 1, img:'../assets/images/bc
   switch (action.type) {
     case 'BANK_SELECTED':
     return action.payload;
+
+    case 'AGENTE_SELECTED':
+    return action.payload;
   }
-  return state;
+
+    return state;
 
 }

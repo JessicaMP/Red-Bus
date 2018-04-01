@@ -5,6 +5,13 @@ export const selectBank = bank => {
   }
 }
 
+export const selectAgente = efect => {
+  return {
+    type: 'AGENTE_SELECTED',
+    payload: efect
+  }
+}
+
 export const actions = {
   CHANGE_TAB: 'CHANGE_TAB',
   BANK_SELECTED: 'BANK_SELECTED'
