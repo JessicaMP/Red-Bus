@@ -13,6 +13,7 @@ const MainContent = () => (
         </div>
         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <SelectPayEfectivo />
+            
         </div>
     </div>
 );
