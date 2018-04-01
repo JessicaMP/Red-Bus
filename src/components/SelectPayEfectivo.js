@@ -1,7 +1,7 @@
 import React from 'react';
 import SitePayEfectivo from './SitePayEfectivo';
 
-const dataEfectivo = ['assets/images/full-carga.jpg', 'assets/images/scotiabank.png', 'assets/images/western-union.png', 'assets/images/kasnet.jpg'];
+const dataEfectivo = ['assets/images/logo-fullcarga.svg', 'assets/images/logo-scotiabank.svg', 'assets/images/logo-westerUnion.svg', 'assets/images/logo-kasnet.svg'];
 
 const SelectPayEfectivo = () => (
     <div className="m-4">

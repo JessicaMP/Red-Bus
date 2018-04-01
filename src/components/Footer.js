@@ -1,13 +1,10 @@
 import React from 'react';
+import PrintPage from './PrintPage';
 
 const Footer = () => (
     <footer className="footer">
         <div className="row d-flex ">
-            <div className="col-md-4 col-6 d-flex justify-content-center align-items-center">
-                <p className="d-inline-block m-3 align-middle text-secondary">Instrucciones vía</p>
-                <button type="button" className="btn btn-outline-warning">
-                <img src="assets/images/icon_print.svg" alt="Print" style={{width: '25.4px'}}/></button>
-            </div>
+            <PrintPage />
             <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
                 <p><span className="text-secondary">Ayuda: </span><a className="text-warning font-weight-bold" href="cont">contacto@redbus.pe</a></p>              
             </div> 

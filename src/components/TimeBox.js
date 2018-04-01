@@ -5,7 +5,7 @@ const time = new Date();
 time.setHours(time.getHours() + 12);
 
 const TimeBox = date => (
-    <div className="row m-4 ">
+    <div className="row m-4 printMe timeBox">
         <div className="col-xl-3 col-4 d-flex flex-column align-items-center p-3 bg-warning border-left">
             <p className="text-light mb-0">Código de pago</p>
             <div>
@@ -19,8 +19,8 @@ const TimeBox = date => (
             </div>
         </div>
         <div className="col-xl-4 col-5 d-flex justify-content-center align-items-center p-3 color-time-box border-right">
-            <img className="mr-3 alarm-img" src="assets/images/icon_time.svg" alt="Generic placeholder image" />
-            <div className="media-body col-xl-7">
+            <img className="mr-0 timeIcon" src="assets/images/icon_time.svg" alt="Generic placeholder image" style={{width: '2.125rem'}}/>
+            <div className="media-body col-md-8">
                 <p className="text-center mb-0">Tu orden expirará</p>
                 <h6 className="text-center">{moment(time).format('lll')}</h6>
             </div>
