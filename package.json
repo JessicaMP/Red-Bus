@@ -1,10 +1,15 @@
 {
   "name": "redbus",
   "version": "0.1.0",
+  "private": true,
+  "homepage": "http://https://jessicamp.github.io/Red-Bus",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js --progress --profile --colors",
-    "deploy": "gh-pages -d public"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Jessica Manturano <jessica95.mp@gmail.com>",
@@ -14,19 +19,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-boilerplate": "^1.1.1",
-    "css-loader": "^0.28.7",
     "gh-pages": "^1.1.0",
-    "html-webpack-plugin": "^2.30.1",
-    "open-browser-webpack-plugin": "0.0.5",
-    "redux-devtools": "^3.4.1",
-    "style-loader": "^0.19.0",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "redux-devtools": "^3.4.1"
   },
   "dependencies": {
     "prop-types": "^15.6.0",

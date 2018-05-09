@@ -1,13 +1,13 @@
-export const actions = {
+export const actionTypes = {
   CHANGE_TAB: 'CHANGE_TAB',
-  BANK_SELECTED: 'BANK_SELECTED'
+  SELECT_BANK: 'SELECTED_BANK'
 }
 
 export const selectBank = bank => {
   // console.log(bank);
   return {
-    type: 'BANK_SELECTED',
-    payload: bank
+    type: actionTypes.SELECT_BANK,
+    bank
   }
 }
 

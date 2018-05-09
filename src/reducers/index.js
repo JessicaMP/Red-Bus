@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
-import banksReducers from './reducer-banks';
-import bankActiveReducers from './reducer-active-bank'; 
+import data from './reducer-data';
+import tabContent from './reducer-tab';
+import select from './reducer-select';
 
-const rootReducer = combineReducers ({
-    banks : banksReducers,
-    active_bank : bankActiveReducers
-  
+const rootReducer = combineReducers({
+	tabs: data,
+	info: tabContent,
+	selectedBank: select
 });
 
 export default rootReducer;

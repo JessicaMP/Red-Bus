@@ -1,21 +1,22 @@
 import React from 'react';
-import PrintPage from './PrintPage';
+import PrintComponent from './PrintComponent';
 
 const Footer = () => (
-    <footer className="footer">
-        <div className="row d-flex ">
-            <PrintPage />
-            <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
-                <p><span className="text-secondary">Ayuda: </span><a className="text-warning font-weight-bold" href="cont">contacto@redbus.pe</a></p>              
-            </div> 
-            <div className="col-md-4 col-6">
-                <figure className="d-flex justify-content-center align-items-center">
-                    <p className="d-inline-block text-secondary">Pago vía</p>
-                    <img className="pagoEfectivo-img" src="assets/images/logo-pagoefectivo.svg" alt="Logo Pago Efectivo" />
-                </figure>
-            </div>
-        </div>
-    </footer>
+	<footer className="footer container">
+		<div className="row justify-content-between align-items-center">
+			<PrintComponent />
+			<div className="p-2 col-md-4 col-7 d-flex justify-content-center align-items-center contact-letter">
+				<p>
+					<span className="text-secondary">Ayuda: </span>
+					<a className="text-warning font-weight-bold" href="mailto:contacto@redbus.pe" target="_black">contacto@redbus.pe</a>
+				</p>
+			</div>
+			<div className="p-2 col-md-4 col-5 text-secondary d-flex justify-content-center align-items-center">
+				<p className="d-inline-block p-0 m-0">Pago vía</p>
+				<img className="d-inline-block pago-efectivo-footer" src="assets/images/logo-pagoefectivo.svg" alt="Logo Pago Efectivo" />
+			</div>
+		</div>
+	</footer>
 );
 
 export default Footer;

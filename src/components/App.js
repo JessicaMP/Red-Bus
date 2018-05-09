@@ -4,11 +4,11 @@ import Main from './Main';
 import Footer from './Footer';
 
 const App = () => (
-    <div className="container"> 
-        <Header/>
-        <Main />
-        <Footer />
-    </div>
+	<div>
+		<Header />
+		<Main />
+		<Footer />
+	</div>
 )
 
 export default App;

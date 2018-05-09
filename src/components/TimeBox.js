@@ -5,27 +5,25 @@ const time = new Date();
 time.setHours(time.getHours() + 12);
 
 const TimeBox = date => (
-    <div className="row m-4 printMe timeBox">
-        <div className="col-xl-3 col-4 d-flex flex-column align-items-center p-3 bg-warning border-left">
-            <p className="text-light mb-0">Código de pago</p>
-            <div>
-                <h2 className="mb-0 text-center text-light font-weight-bold">9125682</h2>
-            </div>
-        </div>
-        <div className="col-xl-5 col-3 d-flex flex-column align-items-center p-3 bg-light">
-            <h6 className="align-middle">TOTAL</h6>
-            <div>
-                <h4>S/. 140.00</h4>
-            </div>
-        </div>
-        <div className="col-xl-4 col-5 d-flex justify-content-center align-items-center p-3 color-time-box border-right">
-            <img className="mr-0 timeIcon" src="assets/images/icon_time.svg" alt="Generic placeholder image" style={{width: '2.125rem'}}/>
-            <div className="media-body col-md-8">
-                <p className="text-center mb-0">Tu orden expirará</p>
-                <h6 className="text-center">{moment(time).format('lll')}</h6>
-            </div>
-        </div>
-    </div>
+	<div className="row mx-2 printMe timeBox">
+		<div className="p-1 rounded-left col-md-3 col-4 d-flex flex-column align-items-center bg-yellow-hsl border-left justify-content-center">
+			<p className="text-light mb-0">Código de pago</p>
+			<p className="code mb-0 text-center text-light font-weight-bold">9125682</p>
+		</div>
+		<div className="p-0 col-md-5 col-3 d-flex flex-column align-items-center justify-content-center bg-light">
+			<p className="align-middle m-0 font-weight-bold">TOTAL</p>
+			<div>
+				<p className="m-0 price">S/. 140.00</p>
+			</div>
+		</div>
+		<div className="p-2 rounded-right col-md-4 col-5 d-flex justify-content-center align-items-center color-time-box border-right">
+			<img className="mr-0 alarm-img" src="assets/images/icon_time.svg" alt="Generic placeholder" />
+			<div className="media-body col-md-8 px-1">
+				<p className="text-center m-0 time">Tu orden expirará</p>
+				<p className="text-center m-0 time">{moment(time).format('lll')}</p>
+			</div>
+		</div>
+	</div>
 )
 
 export default TimeBox;
