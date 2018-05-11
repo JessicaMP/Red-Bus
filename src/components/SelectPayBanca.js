@@ -39,23 +39,17 @@ const settings = {
   }]
 };
 
-const styleSelected = {
-  border: '2px solid #E0AA00'
+const style = {
+  border: '4px solid #E0AA00'
 }
 const SelectPayBanca = ({ banks, setSelectedBank, selectedBank }) => (
-  <div className="mx-4 my-2 mb-4">
+  <div className=" my-2 mb-4 mx-4-pe">
     <Slider {...settings}>
       {banks.map(bank =>
-        <div className="p-2 p-md-3"
-          key={bank.name}
-          onClick={() => setSelectedBank(bank)}
-        >
-          <img className="img-fluid"
-            src={bank.img}
-            alt={bank.name}
-            style={bank.name === selectedBank.name ? { ...styleSelected, cursor: 'pointer' } : { cursor: 'pointer', border: '2px solid #FFD87F' }}
-          />
-          {bank.text !== '' ? <p className='text-center describe-text'>{bank.text}</p> : null}
+        <div className="p-2" key={bank.name} onClick={() => setSelectedBank(bank)}>
+          <img className="img-fluid" src={bank.img} alt={bank.name}
+            style={bank.name === selectedBank.name ? { ...style, cursor: 'pointer' } : { cursor: 'pointer', border: '2px solid #FFD87F' }}/>
+          {bank.text !== '' ? <p className='text-center describe-text' style={{ color: "rgb(111,110,109" }}>{bank.text}</p> : null}
         </div>
       )}
     </Slider>

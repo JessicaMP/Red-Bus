@@ -1,7 +1,10 @@
+.header-img {
+  width: 100px!important;
+}
 /*tab*/
 .nav-tabs {
   border-bottom: 1px solid rgba(224, 170, 0, 0.48);
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 0.08rem;
 }
 
@@ -39,19 +42,22 @@
 
 .price {
   font-size: 0.77rem;
-  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
 }
 
 .time {
   font-size: 0.55rem; 
 }
 
-.bg-yellow-hsl {
-  background-color: rgb(224,170,0)!important;
-}
-
 .alarm-img {
   width: 1.5rem;
+}
+
+.bg-yellow-hsl {
+  background-color: rgb(224,170,0)!important;
 }
 
 .color-time-box {
@@ -87,20 +93,21 @@
 }
 
 .subtitle {
-  color: rgb(238,170,52);
+  color: #e0aa00;
   font-weight: 300;
   letter-spacing: 0.11rem;
 }
-
 /*Button*/
 #btn-payment {
   background-color: #B9373E;
   border-radius: 10px;
   font-size: 1.15em;
 }
+
 /*Carousel*/
 .slick-prev, .slick-next {
   width: 12px!important;
+  /* bottom: 1rem; */
 }
 
 .carousel-control-prev {
@@ -132,4 +139,90 @@
 .pago-efectivo-footer {
   width: 75px;
   margin-left: 5px;
+}
+
+.px-3-pe {
+  padding: 0px!important;
+}
+
+.mx-4-pe {
+  padding: 0 24px;
+}
+
+.container {
+  padding: 0 8px!important;
+}
+
+@media (min-width: 992px) {
+  .nav-tabs {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+  
+  .tab-pane {
+    font-size: 1rem;
+  }
+
+  .header-img {
+    width: 130px!important;
+  }
+
+  .code {
+    font-size: 3rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .time {
+    font-size: 1rem; 
+  }
+  
+  .alarm-img {
+    width: 2.5rem;
+  }
+
+  .px-3-pe {
+    padding: 0 16px;
+  }
+
+  .subtitle {
+    color: #e0aa00;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+  }
+
+  .instruction-num {
+    border: 1.5px solid #E0AA00;
+    width: 25px;
+    height: 25px;
+  }
+
+  .pago-efectivo-details {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+  .slick-prev, .slick-next {
+    width: 20px!important;
+  }
+
+  .describe-text {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+  
+  .pago-efectivo-footer {
+    width: 115px;
+  }
+  
+  .mx-4-pe {
+    padding: 0;
+  }
 }
