@@ -5,9 +5,11 @@ import Footer from './Footer';
 
 const App = () => (
 	<div className="container">
-		<Header />
-		<Main />
-		<Footer />
+		<div className="style-print">
+			<Header />
+			<Main />
+			<Footer />
+		</div>
 	</div>
 )
 

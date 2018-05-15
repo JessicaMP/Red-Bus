@@ -97,6 +97,11 @@
   font-weight: 300;
   letter-spacing: 0.11rem;
 }
+
+.border-language {
+  border-right: 2px solid #e0aa00!important;
+}
+
 /*Button*/
 #btn-payment {
   background-color: #B9373E;

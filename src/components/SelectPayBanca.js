@@ -42,13 +42,15 @@ const settings = {
 const style = {
   border: '4px solid #E0AA00'
 }
+
 const SelectPayBanca = ({ banks, setSelectedBank, selectedBank }) => (
   <div className=" my-2 mb-4 mx-4-pe">
     <Slider {...settings}>
       {banks.map(bank =>
         <div className="p-2" key={bank.name} onClick={() => setSelectedBank(bank)}>
           <img className="img-fluid" src={bank.img} alt={bank.name}
-            style={bank.name === selectedBank.name ? { ...style, cursor: 'pointer' } : { cursor: 'pointer', border: '2px solid #FFD87F' }}/>
+            style={bank.name === selectedBank.name ? { ...style, cursor: 'pointer' } : { cursor: 'pointer', border: '2px solid #FFD87F' }}
+            id={bank.name === selectedBank.name ? 'printMe' : ''}/>
           {bank.text !== '' ? <p className='text-center describe-text' style={{ color: "rgb(111,110,109" }}>{bank.text}</p> : null}
         </div>
       )}

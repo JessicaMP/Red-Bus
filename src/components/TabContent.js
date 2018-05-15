@@ -5,7 +5,7 @@ import SelectPayBanca from './SelectPayBanca';
 const TabContent = ({ content, selectedBank, setSelectedBank, activeTab }) => (
   <div className="tab-pane show active px-3-pe">
     <TimeBox />
-    {/* {console.log(content.num)} */}
+    {/* {console.log(content)} */}
     <p className="mt-3 px-2" style={{ color: "rgb(111,110,109" }}>Selecciona dónde quieres pagar:</p>
     <div className="">    
     <SelectPayBanca
@@ -14,7 +14,7 @@ const TabContent = ({ content, selectedBank, setSelectedBank, activeTab }) => (
     </div>    
     <div className="instructions mt-3 px-2">
       <p>Puedes pagar desde la Web o App móvil del Banco</p>
-      <h6 className="subtitle mb-2">Instrucciones de Pago</h6>
+      <h6 className="subtitle mb-2 printMe">Instrucciones de Pago</h6>
       {selectedBank.pasos.map((p, i) =>
         <p key={i}>{activeTab === 'online' ? <span className="instruction-num">{i + 1}</span> : null} {p}</p>
       )}
